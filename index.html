@@ -1,31 +1,227 @@
 <!DOCTYPE html>
 <html>
-<style>
-#Link{
-  text-align:center;
-  font-size:50px;
+<head>
+    <meta name="samrhn.io" content="width=device-width,inital-scale=1.0">
+    <title>samrhn.io</title>
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 25px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 42%; min-width: 200px;max-width: 200px;}
+.col-6 {width: 50%;}
+.col-7 {width: 58%;}
+.col-8 {width: 66.66%;}
+.col-9 {position:fixed; width: 100%; margin-left: 200px; overflow:hidden;display: flex;}
+.col-10 {position:fixed; width: 100%; margin-left: 10%; overflow:hidden;display: flex;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+body {
+  background-image: url("./background.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+}
+#head img{
+  float: left;
+  width: 200px;
+    padding:0.7%;;
+}
+
+    #head img:hover{
+        opacity: 0.6;
+    }
+
+
+header {
+  background-color: #333333;
+  background-image: url("tx1.gif");
+  background-size:10%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  text-align: left;
+  font-size: 250%;
+  color: white;
+  overflow: visible;
+  min-width:800px;
+}
+    
+section {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 10px;
+}
+    
+#HeaderUl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  width: 600px;  
+}
+    
+#HeaderUl li{
+    float: left;
+    
+    }
+    
+#HeaderUl li a{
+        display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  transition: background-color 1s;
+    }
+    
+#HeaderUl li a:hover{
+        background-color: #111111;
+    transition: background-color 1s;
+    }
+
+    
+    
+.listcontent{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-width: 150px;
+  min-width: 150px;
+
+ 
+}
+.listcontent img{
+        
+        float: left;
+        width: 33px;
+        padding-right:10px;;
+    }
+    
+.listcontent li  {
+        padding-bottom: 30px; 
+    }
+    
+.listcontent li a {
+  border-radius: 25px;
+  display: block;
+  color: #888;
+  padding: 8px 16px;
+  text-decoration: none;
+  background: rgb(240,240,240,0.5);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);
+  transition: background-color 1s;
+}
+.listcontent li a.active {
+  background-color: rgb(10,100,75,0.4);
+  color: white;
+}
+
+.listcontent li a:hover:not(.active) {
+    
+  background-color: rgb(100,100,100,0.3);
+  transition: background-color 1s;
+}
+    
+.logo div.gallery {
+  height: 500px;
+  border-radius: 0px 0px 25px 25px;
+  background-color: rgb(250, 250, 250,0.5);
+    
+}
+
+.logo div.gallery:hover {
+  background-image: linear-gradient(rgb(50, 0, 0,0), rgb(255, 0, 0,1));
+  color:white;
+  transform: background-image 1s;
+}
+
+.logo div.gallery img {
+
+  width: 100%;
+    min-width: 110px;
+  height: auto;
+}
+
+.logo div.desc {
+  padding: 15px 15px;
+  text-align: center;
+}
+
+
+.responsive {
+  margin-left: 3%;
+  padding: 0px 5px;
+  float:left;
+  width: 120px;
+    
+  
 }
 </style>
-<br/>
-<body style="background-color:salmon;font-size:100px;color:floralwhite">
-<!--背景色 定义文档的主体-->
-<h1 align="center">Hello Everyone</h1>
-<!--大标题居中-->
-<br/>
-<br/>
-<!--空行-->
-<p align="center" style="font-family:arial;font-size:40px;">
-<img src ="rqxs.jpg" align ="left" width="1920" height="1080"> 
-<p style="color:ghostwhite"></p>This is my first Home Page</p >
-<!--小标题居中-->
-<div id="Link">
-<a href="P1.html">P1</a>
-<a href="P2.html">P2</a>
-<a href="P3.html">P3</a>
-<a href="P4.html">P4</a>
-<!--超链接-->
-<br/>
-<a href="http://www.w3school.com.cn/" target="_blank">Visit W3School!</a>
-</div>
+    </head>
+<header id="head">
+    <nav>
+        <img src=tx1.gif alt="samrhn">
+        <ul id="HeaderUI">
+        <li>
+        <a align="center">Samrhn</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+<section style="width: 100%；overflow:hidden">
+    <div class="listcontent">
+        <li>
+            <a class="active" href="homework0.html">homework01
+</a>
+        </li>
+         <li>        
+<section style="width: 100%；overflow:hidden">
+    <div class="listcontent">
+        <li>
+            <a class="active" href="homework1.html">homework02
+</a>
+        </li>
+                 <li>        
+<section style="width: 100%；overflow:hidden">
+    <div class="listcontent">
+        <li>
+            <a class="active" href="homework2.html">homework03
+</a>
+        </li>
+                 <li>        
+<section style="width: 100%；overflow:hidden">
+    <div class="listcontent">
+        <li>
+            <a class="active" href="homework3.html">homework04
+</a> 
+        </li>
+                 <li>        
+<section style="width: 100%；overflow:hidden">
+    <div class="listcontent">
+        <li>
+            <a class="active" href="homework4.html">homework05
+</a>
+        </li>
+        </section>
+
 </body>
 </html>
